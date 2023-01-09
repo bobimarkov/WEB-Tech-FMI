@@ -5,7 +5,7 @@
         public function __construct()
         {
             $HOSTNAME = "localhost";
-            $DB_NAME = "test";
+            $DB_NAME = "electives";
             $USER = "root";
             $PASSWORD = "";
 

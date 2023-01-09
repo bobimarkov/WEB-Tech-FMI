@@ -35,6 +35,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         } else {
             $database -> postData($title, $description, $lecturer);
         }
+        header('Location: ../index.php?id=' . $ID);
+        die();
     } else {
         echo $titleErr . '\n' . $descriptionErr . '\n' . $lecturerErr;
     }
